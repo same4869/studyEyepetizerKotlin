@@ -3,6 +3,9 @@
 buildscript {
     ext.kotlin_version = '1.2.41'
     repositories {
+        maven {
+            url NEXUS_PUBLIC
+        }
         google()
         jcenter()
     }
@@ -17,6 +20,9 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url NEXUS_PUBLIC
+        }
         google()
         jcenter()
     }
